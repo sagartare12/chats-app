@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Drawer ,Divider, Alert } from 'rsuite'
 import { useProfile } from '../../context/profileContext'
 import { database } from '../../misc/firebase';
+import { AvatarUploadBtn } from './AvatarUploadBtn';
 import { EditableInput } from './EditableInput';
 import { ProviderBlock } from './ProviderBlock';
 
@@ -19,7 +20,7 @@ import { ProviderBlock } from './ProviderBlock';
         }
     };
     return (
-        <>
+        <React.Fragment>
                     <Drawer.Header>
                         <Drawer.Title>
                             Dashboard
@@ -35,6 +36,7 @@ import { ProviderBlock } from './ProviderBlock';
                     onSave={onSave}
                     label={<h6 className="mb-2">Nickname</h6>}
                     />
+                    <AvatarUploadBtn />
                 </Drawer.Body>
 
                 <Drawer.Footer>
@@ -42,7 +44,7 @@ import { ProviderBlock } from './ProviderBlock';
                         Sign Out
                     </Button>
                 </Drawer.Footer>
-        </>
+        </React.Fragment>
     )
 }
 export default Dashboard
