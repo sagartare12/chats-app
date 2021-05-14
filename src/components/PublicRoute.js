@@ -13,11 +13,11 @@ import {Container , Loader} from 'rsuite'
     }
 
     if(profile && !isLoading){
-        return <Redirect to="/signin" />;
+        return <Redirect to="/" />;
     }
-    if(profile){
-    return <Redirect to="/" />
-}
+//     if(profile){
+//     return <Redirect to="/" />
+// }
     return  <Route {...routeProps}>{children}</Route>
     
 }

@@ -6,7 +6,6 @@ import DashboardToggle from './dashboard/DashboardToggle'
             <div>
                 <DashboardToggle />
             </div>
-            bottom
         </div>
     )
 }
