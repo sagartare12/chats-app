@@ -48,7 +48,7 @@ import { auth, database } from "../misc/firebase";
             }
         }, []);
     
-     return <ProfileContext.Provider value={ isLoading , profile}>
+     return <ProfileContext.Provider value={ {isLoading , profile}}>
          {children}
      </ProfileContext.Provider>
  }
