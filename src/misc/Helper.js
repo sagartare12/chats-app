@@ -6,3 +6,9 @@ export function getNameInitial(name){
     }
     return (splitName[0][0] + splitName[0][1]);
 }
+
+export function transformToArrayWithId(snapVal) {
+    return snapVal ? Object.keys(snapVal).map(roomId => {
+        return { ...snapVal[roomId],id:roomId};
+    }):[]
+}
