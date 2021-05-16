@@ -63,7 +63,9 @@ $chat-b: 65px;
 }
 
 .chat-bottom {
-  height: $chat-b;
+  // height: $chat-b;
+  position: fixed;
+  bottom: 15px;
 }
 
 .chat-middle {
